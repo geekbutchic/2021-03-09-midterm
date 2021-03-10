@@ -36,13 +36,42 @@ numOddValues = (arr) => {
   return oddCount;
 };
 
+averageStringLength = (arr) => {
+  let output = arr.join("").length / arr.length;
+  if (!output) {
+    return 0;
+  } else {
+    return output;
+  }
+};
 
+// Possible other function that might work but did not pass tests
 
+// firstPunctuationIndex = (str) => {
+//     let indices = [];
 
+//    for (let i = 0; i < str.length; i++) {
+//        if (str[i].includes('!')) {
+//            return indices.push(i);
+//        } else if (str[i] === '?') {
+//            return indices.push(i);
+//        } else if (str[i] === '.') {
+//            return indices.push(i);
+//        }
+//    }
+//    return indices;
+// }
 
+firstPunctuationIndex = (str) => {
+    let n = str.includes('!', '?', '.');
+    let count = 0;
 
-
-
+    if (!n) {
+        return -1;
+    } else {
+        return count;
+    }
+};
 
 
 

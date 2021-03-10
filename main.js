@@ -73,10 +73,6 @@ firstPunctuationIndex = (str) => {
     }
 };
 
-
-
-
-
 // ┌─────────────────────────────────────┐
 // │ Do not modify code below this line. │
 // └─────────────────────────────────────┘

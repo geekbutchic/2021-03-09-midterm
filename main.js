@@ -45,6 +45,7 @@ averageStringLength = (arr) => {
   }
 };
 
+
 // Possible other function that might work but did not pass tests
 
 // firstPunctuationIndex = (str) => {
@@ -61,17 +62,34 @@ averageStringLength = (arr) => {
 //    }
 //    return indices;
 // }
-
+// -1 is example of searching for element 
 firstPunctuationIndex = (str) => {
-    let n = str.includes('!', '?', '.');
-    let count = 0;
+    let firstIndex = -1
 
-    if (!n) {
-        return -1;
-    } else {
-        return count;
+    for (let i = 0; i < str.length; i++) {
+        if (str[i] === '.' || str[i] === '!' || str[i] === '?') {
+            if (firstIndex === -1) {
+                firstIndex = i;
+            }
+        }
     }
+    return firstIndex;
 };
+// Pinball machine high score
+// 1st - 100
+// 2nd - 90
+// 3rd - 80
+// Our score - 95
+
+getPlace = (str) => {
+
+}
+
+
+
+
+
+
 
 // ┌─────────────────────────────────────┐
 // │ Do not modify code below this line. │

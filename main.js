@@ -14,11 +14,42 @@ ageToAbilities = (age) => {
   }
 };
 
-oddIndices = (arr) => {
-    let indices = 0;
+oddIndices = (a) => {
+    let ar = [];
 
-    
+    for (var i = 0; i < a.length; i++) {
+        if (i % 2 === 1) {
+            ar.push(a[i]);
+        }
+    }
+    return ar;
 };
+
+
+numOddValues = (numbers) => {
+    let odd = [];
+
+    for (let i = 0; i < numbers.length; i++) {
+        if (numbers[i] % 2 === 1) {
+            odd.push(numbers[i]); 
+        } 
+    }
+    return odd;
+}
+
+
+
+
+// for (var i = 0; i < a.length; i++) {
+//     if(i % 2 === 0) { // index is even
+//         ar.push(a[i]);
+
+
+
+
+
+
+
 
 // ┌─────────────────────────────────────┐
 // │ Do not modify code below this line. │
